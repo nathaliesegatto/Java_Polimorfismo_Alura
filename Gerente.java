@@ -15,8 +15,11 @@ public class Gerente extends Funcionario {
         }
     }
 
-//    public double getBonificacao() {
-//        return this.getSalario();
-//    }
+    public double getBonificacao() {
+        return (super.getBonificacao()) + super.getSalario(); 
+    //  return (super.getBonificacao()) + super.salario(); >>> OUTRA FORMA ( MAIS RARA) DE ACESSAR O ATRIBUTO DA CLASSE MÃE.
+        												     //   SOMENTE A CLASSE FILHA PODE ACESSAR DESSA FORMA, DESDE QUE O 
+        												     //   ATRIBUTO NA CLASSE MÃE ESTEJA DEFINIDO COMO "PROTECTED"
+    }
     
-}
+ }
