@@ -3,10 +3,11 @@ public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		
-		Funcionario nico = new Funcionario();
-		nico.setNome("Nico Steppat");
+		// Funcionario nico = new Funcionario(); // não compila porque "Funcionario" não é mais concreto, e sim abstrato
+		Funcionario nico = new EditorVideo_1();
+		nico.setNome("nico steppat");
 		nico.setCpf("223355646-9");
-		nico.setSalario(3000.0);
+		nico.setSalario(2500.80);
 		
 		System.out.println(nico.getNome());
 		System.out.println(nico.getBonificacao());
