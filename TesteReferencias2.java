@@ -17,12 +17,12 @@ public class TesteReferencias2 {
 		e1.setSalario(2500.0);
 		
 
-		ControleBonificacao controle = new ControleBonificacao();
-		controle.registra(g1);
-		controle.registra(f1);
-		controle.registra(e1);
+//		ControleBonificacao controle = new ControleBonificacao();
+//		controle.registra(g1);
+//		controle.registra(f1);
+//		controle.registra(e1);
 
-		System.out.println(controle.getSoma());
+//		System.out.println(controle.getSoma());
 		
 	}
 	

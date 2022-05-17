@@ -9,7 +9,7 @@ public class TesteReferencias {
 
 		System.out.println(nome);
 		
-		Funcionario g2 = new Gerente();  // FUNCIONA PORQUE GERENTE É FUNCIONÁRIO.
+		Funcionario g2 = new Gerente_1();  // FUNCIONA PORQUE GERENTE É FUNCIONÁRIO.
 		String nome1 = g2.getNome();  // SÓ PODE CHAMAR MÉTODOS QUE ESTEJAM PREVISTOS NA CLASSE FUNCIONÁRIO.
 
 		System.out.println(nome1);
