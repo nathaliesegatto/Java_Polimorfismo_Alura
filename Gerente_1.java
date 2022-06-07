@@ -1,6 +1,10 @@
 public class Gerente_1 extends Funcionario implements Autenticavel {
 
-	private int senha;
+	private AutenticacaoUtil autenticador;
+
+	public Gerente_1() {  // CONSTRUTOR
+		this.autenticador = new AutenticacaoUtil(); // Quando cria a classe cliente, também cria AutenticacaoUtil
+	}
 
 	@Override
 	public double getBonificacao() {
@@ -10,17 +14,13 @@ public class Gerente_1 extends Funcionario implements Autenticavel {
 
 	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha);
 
 	}
 
 	@Override
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.autenticador.autentica(senha);
 
 	}
 }
